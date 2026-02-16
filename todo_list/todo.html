@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+
+    <link rel="stylesheet" href="todo.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NZ+Basic:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="navbar">
+        <h2>Agenda</h2>
+    </div>
+
+    
+    <div class="container">
+        <div class="bx1">
+            <h3>Can we be strange</h3>
+            <h5>Susaj</h5>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Possimus odit dolores illum ea eum totam.
+            </p>
+            <button onclick="deletecontainter(event)">Delete</button>
+        </div>
+    </div>
+
+    
+    <div class="popup-overlay"></div>
+
+    <div class="overlay-box">
+        <h2>Add Todo</h2>
+        <form>
+            <input placeholder="Title" id="add-title">
+            <input placeholder="Subject" id="add-sub">
+            <textarea placeholder="Your Description" id="add-descri"></textarea>
+
+            <div class="button-group">
+                <button type="button" id="add-container">Add</button>
+                <button type="button" id="btn-cancel">Cancel</button>
+            </div>
+        </form>
+    </div>
+
+    
+    <button class="add-btn">+</button>
+
+<script src="todo.js"></script>
+</body>
+</html>
